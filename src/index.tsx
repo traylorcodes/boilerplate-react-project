@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import ExampleComponent from './components/ExampleComponent/ExampleComponent';
+import { setAssetPath } from "@esri/calcite-components/dist/components";
+setAssetPath("https://js.arcgis.com/calcite-components/2.2.0/assets");
+document.body.classList.toggle('calcite-mode-dark');
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -9,6 +12,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/dark/main.css"></link>
     {/*make your first component and throw it in here */}
     <ExampleComponent></ExampleComponent>
   </React.StrictMode>
