@@ -14,6 +14,7 @@ root.render(
   <React.StrictMode>
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/dark/main.css"></link>
     {/*make your first component and throw it in here */}
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/dark/main.css"></link>
     <ExampleComponent></ExampleComponent>
   </React.StrictMode>
 );
